@@ -67,10 +67,8 @@ extension AppDelegate: AppsFlyerLibDelegate {
         AppsFlyerLib.shared().start(completionHandler: { (dictionary, error) in
             if (error != nil){
                 print("AF error: \(error)")
-//                return
             } else {
                 print("AF inited: \(String(describing: dictionary))")
-//                return
             }
         })
         AppDelegate.afid = AppsFlyerLib.shared().getAppsFlyerUID()
